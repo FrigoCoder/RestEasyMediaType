@@ -1,7 +1,9 @@
+package application;
+
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
 @ApplicationPath("")
-public class RestApplication extends Application {
+public class RestEasyMediaTypeApplication extends Application {
 
 }
