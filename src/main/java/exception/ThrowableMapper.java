@@ -9,7 +9,7 @@ public class ThrowableMapper implements ExceptionMapper<Throwable> {
 
     @Override
     public Response toResponse(Throwable e) {
-        return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(e).build();
+        return Response.status(Response.Status.PAYMENT_REQUIRED).entity(e).build();
     }
 
 }

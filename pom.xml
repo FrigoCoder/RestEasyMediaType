@@ -16,6 +16,7 @@
         <maven.compiler.useIncrementalCompilation>false</maven.compiler.useIncrementalCompilation>
         <maven.test.failure.ignore>true</maven.test.failure.ignore>
         <test>**</test>
+        <version.jackson>2.14.2</version.jackson>
         <version.resteasy>4.0.0.Final</version.resteasy>
     </properties>
 
@@ -29,6 +30,8 @@
             <version>10.0.0</version>
             <scope>provided</scope>
         </dependency>
+
+        <!-- RestEasy -->
 
         <dependency>
             <groupId>org.jboss.resteasy</groupId>
@@ -49,6 +52,29 @@
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-servlet-initializer</artifactId>
             <version>${version.resteasy}</version>
+        </dependency>
+
+        <!-- Jackson -->
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${version.jackson}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${version.jackson}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${version.jackson}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>${version.jackson}</version>
         </dependency>
 
         <!-- Testing -->
