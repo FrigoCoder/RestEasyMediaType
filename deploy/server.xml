@@ -3,12 +3,12 @@
     <basicRegistry id="basic" realm="BasicRegistry">
     </basicRegistry>
     <featureManager>
-        <feature>javaee-8.0</feature>
+        <feature>javaee-10.0</feature>
         <feature>localConnector-1.0</feature>
     </featureManager>
     <httpEndpoint host="*" httpPort="80" httpsPort="443" id="defaultHttpEndpoint" />
     <keyStore id="defaultKeyStore" location="key.jks" password="{xor}PDc+MTg6Nis=" />
-    <ssl id="recoverySSLConfig" keyStoreRef="defaultKeyStore" sslProtocol="TLSv1.2" trustStoreRef="defaultTrustStore" />
+    <ssl id="recoverySSLConfig" keyStoreRef="defaultKeyStore" sslProtocol="TLSv1.2"/>
     <sslDefault sslRef="recoverySSLConfig" />
     <webApplication contextRoot="/" id="RestEasyMediaType" location="RestEasyMediaType.war" name="RestEasyMediaType"/>
 </server>
